@@ -10,7 +10,7 @@ const { listingSchema } = require("../schema.js");
 const { isLoggedIn, isOwner } = require("../middleware.js");
 const { upload } = require("../cloudConfig.js");
 
-const listingController = require("../Controllers/listing.js");
+const listingController = require("../manager/listing.js");
 
 const validateListing = (req, res, next) => {
   console.log(req.body);
