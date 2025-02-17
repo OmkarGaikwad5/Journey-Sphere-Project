@@ -5,7 +5,7 @@ if (process.env.NODE_ENV != "production") {
 const express = require("express");
 const router = express.Router();
 
-const searchController = require("../Controllers/search.js");
+const searchController = require("../manager/search.js");
 
 router.route("/:query").get(searchController.index);
 

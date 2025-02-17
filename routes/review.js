@@ -7,7 +7,7 @@ const {reviewSchema} = require("../schema.js");
 const Review = require("../Models/review");
 const Listing = require("../Models/listing.js");
 const { isLoggedIn ,isReviewAuthor} = require("../middleware.js");
-const reviewController = require("../Controllers/review.js");
+const reviewController = require("../manager/review.js");
 
 const validateReview = (req,res,next) =>{
     let {error} =  reviewSchema.validate(req.body);
